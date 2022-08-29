@@ -26,10 +26,14 @@ public class MovimentoPlayer : MonoBehaviour
 
     public Animator Anim;
 
+    public bool Run;
+
 
     void Start()
     {
         vidaAtual = vidaInicial;
+        Anim = GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
@@ -39,13 +43,41 @@ public class MovimentoPlayer : MonoBehaviour
         moveInput.y = Input.GetAxis("Vertical");
         transform.Translate(moveInput * Time.deltaTime * moveSpeed);
 
+        if (moveInput.x != 0 || moveInput.y != 0)
+        {
+
+            Run = true;
+            
+        }
+        else
+        {
+            Run = false;
+        
+        }
+
+        if(moveInput.y > 0)
+        {
+            Anim.SetLayerWeight(1, 1);
+            Anim.SetLayerWeight(2, 0);
+        }
+        if (moveInput.y < 0)
+        {
+            Anim.SetLayerWeight(1, 0);
+            Anim.SetLayerWeight(2, 0);
+        }
+        if (moveInput.x >0)
+        {
+            Anim.SetLayerWeight(1, 0);
+            Anim.SetLayerWeight(2, 1);
+        }
+
         percentualVida();
 
         if (vidaAtual <= 0)
         {
             SceneManager.LoadScene("GameOver");
         }
-
+        Anim.SetBool("Run", Run);
     }
 
     public void percentualVida()

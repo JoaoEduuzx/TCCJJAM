@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: idlee
+  m_Name: IdleCima
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,16 +20,12 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 8793639957104055765, guid: ce6770cacc0647b4db4e0a30aa4f9571, type: 3}
-    - time: 0.2
-      value: {fileID: 6084859605308855041, guid: ce6770cacc0647b4db4e0a30aa4f9571, type: 3}
-    - time: 0.4
-      value: {fileID: 8793639957104055765, guid: ce6770cacc0647b4db4e0a30aa4f9571, type: 3}
+      value: {fileID: -845273051993493866, guid: 22c2ddf5983864b47ba802f8749d93da, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 5
+  m_SampleRate: 60
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -44,15 +40,13 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 8793639957104055765, guid: ce6770cacc0647b4db4e0a30aa4f9571, type: 3}
-    - {fileID: 6084859605308855041, guid: ce6770cacc0647b4db4e0a30aa4f9571, type: 3}
-    - {fileID: 8793639957104055765, guid: ce6770cacc0647b4db4e0a30aa4f9571, type: 3}
+    - {fileID: -845273051993493866, guid: 22c2ddf5983864b47ba802f8749d93da, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.6
+    m_StopTime: 0.016666668
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
